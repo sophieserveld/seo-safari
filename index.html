@@ -176,31 +176,25 @@ html,body{height:100%;font-family:'Nunito',sans-serif;background:var(--pu);color
 <div id="s-landing" class="screen active">
   <div class="landing-inner">
 
-    <div class="logo-pill">HX</div>
-
     <div class="landing-title">SEO <em>Wordsearch</em> 🔍</div>
-    <p class="landing-sub">Think you know your SEO? Read the definitions, then race to find all the words — fastest time wins! 🏆</p>
 
     <div class="steps">
       <div class="step-row">
         <div class="step-num">1</div>
-        <div class="step-text"><strong>Read the definitions</strong> — learn what each SEO term means. Take your time, there's no rush yet!</div>
+        <div class="step-text"><strong>Learn SEO terms & definitions</strong> — Take your time, there's no rush yet!</div>
       </div>
       <div class="step-row">
         <div class="step-num">2</div>
-        <div class="step-text"><strong>Scroll down to the wordsearch</strong> — words run horizontally or vertically, and some may be backwards!</div>
+        <div class="step-text"><strong>Scroll down to the wordsearch</strong> - The terms you need to find are at the bottom.</div>
       </div>
       <div class="step-row">
         <div class="step-num">3</div>
-        <div class="step-text"><strong>Find your first word to start the clock</strong> — the timer starts automatically the moment you get your first match. Find all 10 as fast as you can!</div>
+        <div class="step-text"><strong>Ready, steady, search!</strong> — The timer will auto-start when you find your first word. Fastest wins a prize 🏆</div>
       </div>
     </div>
 
-    <div class="timer-note">⏱ <strong>No timer until you find your first word</strong> — so read the definitions fully, then go when you're ready. The clock stops automatically when you find the last word. Fastest time wins! 🏆</div>
-
     <button class="begin-btn" onclick="startGame()">Let's Go! →</button>
 
-    <p class="expo-note">Customer Safari Expo 2026 · Holiday Extras SEO Team</p>
   </div>
 </div>
 
@@ -221,19 +215,19 @@ html,body{height:100%;font-family:'Nunito',sans-serif;background:var(--pu);color
   <div class="game-scroll">
 
     <!-- HOW GOOGLE WORKS -->
-    <div class="section-label">⚙️ How Google Works</div>
+    <div class="section-label">⚙️ How does Google actually work?</div>
     <div class="how-google">
       <div class="how-steps">
-        <div class="how-step"><div class="step-lbl c">🕷️ CRAWL</div><p>Bots or 'Spiders' crawl the web, discovering pages via links.</p></div>
+        <div class="how-step"><div class="step-lbl c">🕷️ CRAWL</div><p>Bots AKA 'spiders' crawl the web, discovering pages via links.</p></div>
         <div class="how-arrow">›</div>
-        <div class="how-step"><div class="step-lbl i">📂 INDEX</div><p>Then pages are analysed and indexed in Google's database.</p></div>
+        <div class="how-step"><div class="step-lbl i">📂 INDEX</div><p>Then pages are analysed and indexed into Google's database.</p></div>
         <div class="how-arrow">›</div>
-        <div class="how-step"><div class="step-lbl r">🏆 RANK</div><p>Google sorts pages by relevance &amp; quality. Best wins #1.</p></div>
+        <div class="how-step"><div class="step-lbl r">🏆 RANK</div><p>Google ranks pages by relevance &amp; quality. This is what you see when you search!</p></div>
       </div>
     </div>
 
     <!-- DEFINITIONS -->
-    <div class="section-label">📖 SEO Definitions — read these first!</div>
+    <div class="section-label">📖 SEO Definitions </div>
     <div class="defs-grid">
        <div class="def-card" data-word="OPTIMISATION" data-a="bl"><div class="dt">🎯 Optimisation <span class="tick">✓</span></div><div class="db">The ongoing process of improving pages so they rank higher — better content, fixing technical issues, earning links, and the best experience for users.</div></div>
       <div class="def-card" data-word="KEYWORDS" data-a="bl"><div class="dt">🔑 Keywords <span class="tick">✓</span></div><div class="db">The phrases customers type into search engines or AI platforms. We look at search volumes per month to write targeted content. <em>'Gatwick Parking'</em> = <strong>110,000/month!</strong></div></div>
@@ -253,18 +247,11 @@ html,body{height:100%;font-family:'Nunito',sans-serif;background:var(--pu);color
     <div class="timer-strip">
       <div class="timer-display" id="td">00:00</div>
       <div style="display:flex;align-items:center;gap:10px">
-        <div class="timer-status" id="timer-status">⬇️ Find your first word to start!</div>
-        <button class="tbtn reset" onclick="resetGame()">↺ Reset</button>
       </div>
-    </div>
-    <div class="progress-row">
-      <span class="fc" id="fc">0 / 10 found</span>
-      <div class="pbar-wrap"><div class="pbar-fill" id="pb"></div></div>
     </div>
 
     <!-- WORDSEARCH -->
-    <div class="section-label" style="margin-bottom:6px">🔍 Now find the words at the bottom of the screen!</div>
-    <div class="ws-hint">The timer starts on your first find. Hint: some may be backwards! </div>
+    <div class="section-label" style="margin-bottom:6px">Find the words at the bottom of the screen. The timer starts on your first find. Hint: some may be backwards!</div>
     <div class="ws-grid-wrap" id="gwrap">
       <div class="ws-grid" id="wsg" style="grid-template-columns: repeat(13, 1fr);"><div class="wc" data-r="0" data-c="0">S</div><div class="wc" data-r="0" data-c="1">C</div><div class="wc" data-r="0" data-c="2">X</div><div class="wc" data-r="0" data-c="3">G</div><div class="wc" data-r="0" data-c="4">T</div><div class="wc" data-r="0" data-c="5">O</div><div class="wc" data-r="0" data-c="6">V</div><div class="wc" data-r="0" data-c="7">V</div><div class="wc" data-r="0" data-c="8">M</div><div class="wc" data-r="0" data-c="9">A</div><div class="wc" data-r="0" data-c="10">C</div><div class="wc" data-r="0" data-c="11">P</div><div class="wc" data-r="0" data-c="12">D</div><div class="wc" data-r="1" data-c="0">D</div><div class="wc" data-r="1" data-c="1">B</div><div class="wc" data-r="1" data-c="2">D</div><div class="wc" data-r="1" data-c="3">W</div><div class="wc" data-r="1" data-c="4">U</div><div class="wc" data-r="1" data-c="5">C</div><div class="wc" data-r="1" data-c="6">N</div><div class="wc" data-r="1" data-c="7">D</div><div class="wc" data-r="1" data-c="8">Z</div><div class="wc" data-r="1" data-c="9">M</div><div class="wc" data-r="1" data-c="10">T</div><div class="wc" data-r="1" data-c="11">F</div><div class="wc" data-r="1" data-c="12">G</div><div class="wc" data-r="2" data-c="0">R</div><div class="wc" data-r="2" data-c="1">K</div><div class="wc" data-r="2" data-c="2">G</div><div class="wc" data-r="2" data-c="3">P</div><div class="wc" data-r="2" data-c="4">N</div><div class="wc" data-r="2" data-c="5">B</div><div class="wc" data-r="2" data-c="6">F</div><div class="wc" data-r="2" data-c="7">O</div><div class="wc" data-r="2" data-c="8">K</div><div class="wc" data-r="2" data-c="9">D</div><div class="wc" data-r="2" data-c="10">S</div><div class="wc" data-r="2" data-c="11">G</div><div class="wc" data-r="2" data-c="12">Q</div><div class="wc" data-r="3" data-c="0">O</div><div class="wc" data-r="3" data-c="1">O</div><div class="wc" data-r="3" data-c="2">P</div><div class="wc" data-r="3" data-c="3">T</div><div class="wc" data-r="3" data-c="4">I</div><div class="wc" data-r="3" data-c="5">M</div><div class="wc" data-r="3" data-c="6">I</div><div class="wc" data-r="3" data-c="7">S</div><div class="wc" data-r="3" data-c="8">A</div><div class="wc" data-r="3" data-c="9">T</div><div class="wc" data-r="3" data-c="10">I</div><div class="wc" data-r="3" data-c="11">O</div><div class="wc" data-r="3" data-c="12">N</div><div class="wc" data-r="4" data-c="0">W</div><div class="wc" data-r="4" data-c="1">I</div><div class="wc" data-r="4" data-c="2">I</div><div class="wc" data-r="4" data-c="3">F</div><div class="wc" data-r="4" data-c="4">Y</div><div class="wc" data-r="4" data-c="5">T</div><div class="wc" data-r="4" data-c="6">I</div><div class="wc" data-r="4" data-c="7">R</div><div class="wc" data-r="4" data-c="8">O</div><div class="wc" data-r="4" data-c="9">H</div><div class="wc" data-r="4" data-c="10">T</div><div class="wc" data-r="4" data-c="11">U</div><div class="wc" data-r="4" data-c="12">A</div><div class="wc" data-r="5" data-c="0">Y</div><div class="wc" data-r="5" data-c="1">R</div><div class="wc" data-r="5" data-c="2">Y</div><div class="wc" data-r="5" data-c="3">L</div><div class="wc" data-r="5" data-c="4">O</div><div class="wc" data-r="5" data-c="5">K</div><div class="wc" data-r="5" data-c="6">A</div><div class="wc" data-r="5" data-c="7">L</div><div class="wc" data-r="5" data-c="8">Z</div><div class="wc" data-r="5" data-c="9">C</div><div class="wc" data-r="5" data-c="10">T</div><div class="wc" data-r="5" data-c="11">S</div><div class="wc" data-r="5" data-c="12">O</div><div class="wc" data-r="6" data-c="0">E</div><div class="wc" data-r="6" data-c="1">E</div><div class="wc" data-r="6" data-c="2">N</div><div class="wc" data-r="6" data-c="3">P</div><div class="wc" data-r="6" data-c="4">W</div><div class="wc" data-r="6" data-c="5">S</div><div class="wc" data-r="6" data-c="6">N</div><div class="wc" data-r="6" data-c="7">T</div><div class="wc" data-r="6" data-c="8">T</div><div class="wc" data-r="6" data-c="9">S</div><div class="wc" data-r="6" data-c="10">Z</div><div class="wc" data-r="6" data-c="11">G</div><div class="wc" data-r="6" data-c="12">S</div><div class="wc" data-r="7" data-c="0">K</div><div class="wc" data-r="7" data-c="1">V</div><div class="wc" data-r="7" data-c="2">N</div><div class="wc" data-r="7" data-c="3">O</div><div class="wc" data-r="7" data-c="4">I</div><div class="wc" data-r="7" data-c="5">C</div><div class="wc" data-r="7" data-c="6">R</div><div class="wc" data-r="7" data-c="7">U</div><div class="wc" data-r="7" data-c="8">R</div><div class="wc" data-r="7" data-c="9">D</div><div class="wc" data-r="7" data-c="10">M</div><div class="wc" data-r="7" data-c="11">N</div><div class="wc" data-r="7" data-c="12">E</div><div class="wc" data-r="8" data-c="0">F</div><div class="wc" data-r="8" data-c="1">I</div><div class="wc" data-r="8" data-c="2">O</div><div class="wc" data-r="8" data-c="3">D</div><div class="wc" data-r="8" data-c="4">J</div><div class="wc" data-r="8" data-c="5">H</div><div class="wc" data-r="8" data-c="6">S</div><div class="wc" data-r="8" data-c="7">P</div><div class="wc" data-r="8" data-c="8">I</div><div class="wc" data-r="8" data-c="9">R</div><div class="wc" data-r="8" data-c="10">T</div><div class="wc" data-r="8" data-c="11">I</div><div class="wc" data-r="8" data-c="12">G</div><div class="wc" data-r="9" data-c="0">A</div><div class="wc" data-r="9" data-c="1">E</div><div class="wc" data-r="9" data-c="2">P</div><div class="wc" data-r="9" data-c="3">A</div><div class="wc" data-r="9" data-c="4">G</div><div class="wc" data-r="9" data-c="5">E</div><div class="wc" data-r="9" data-c="6">S</div><div class="wc" data-r="9" data-c="7">P</div><div class="wc" data-r="9" data-c="8">E</div><div class="wc" data-r="9" data-c="9">E</div><div class="wc" data-r="9" data-c="10">D</div><div class="wc" data-r="9" data-c="11">K</div><div class="wc" data-r="9" data-c="12">A</div><div class="wc" data-r="10" data-c="0">Q</div><div class="wc" data-r="10" data-c="1">W</div><div class="wc" data-r="10" data-c="2">B</div><div class="wc" data-r="10" data-c="3">X</div><div class="wc" data-r="10" data-c="4">E</div><div class="wc" data-r="10" data-c="5">M</div><div class="wc" data-r="10" data-c="6">B</div><div class="wc" data-r="10" data-c="7">Z</div><div class="wc" data-r="10" data-c="8">W</div><div class="wc" data-r="10" data-c="9">V</div><div class="wc" data-r="10" data-c="10">A</div><div class="wc" data-r="10" data-c="11">N</div><div class="wc" data-r="10" data-c="12">M</div><div class="wc" data-r="11" data-c="0">S</div><div class="wc" data-r="11" data-c="1">S</div><div class="wc" data-r="11" data-c="2">Y</div><div class="wc" data-r="11" data-c="3">S</div><div class="wc" data-r="11" data-c="4">E</div><div class="wc" data-r="11" data-c="5">A</div><div class="wc" data-r="11" data-c="6">X</div><div class="wc" data-r="11" data-c="7">Y</div><div class="wc" data-r="11" data-c="8">V</div><div class="wc" data-r="11" data-c="9">W</div><div class="wc" data-r="11" data-c="10">P</div><div class="wc" data-r="11" data-c="11">A</div><div class="wc" data-r="11" data-c="12">I</div><div class="wc" data-r="12" data-c="0">V</div><div class="wc" data-r="12" data-c="1">S</div><div class="wc" data-r="12" data-c="2">B</div><div class="wc" data-r="12" data-c="3">A</div><div class="wc" data-r="12" data-c="4">C</div><div class="wc" data-r="12" data-c="5">K</div><div class="wc" data-r="12" data-c="6">L</div><div class="wc" data-r="12" data-c="7">I</div><div class="wc" data-r="12" data-c="8">N</div><div class="wc" data-r="12" data-c="9">K</div><div class="wc" data-r="12" data-c="10">S</div><div class="wc" data-r="12" data-c="11">R</div><div class="wc" data-r="12" data-c="12">T</div></div>
     </div>
