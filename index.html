@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0061)file:///Users/sophie.serveld/Downloads/hx-seo-wordsearch.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>HX SEO Wordsearch</title>
-<link href="./index_files/css2" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
   --pu:#542E91;--pud:#3B1F6E;--pum:#6B3DB8;
@@ -32,7 +32,6 @@ html,body{height:100%;font-family:'Nunito',sans-serif;background:var(--pu);color
   position:relative;
   overflow:hidden;
 }
-/* decorative circles */
 #s-landing::before{content:'';position:absolute;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.04);top:-80px;right:-80px;pointer-events:none}
 #s-landing::after{content:'';position:absolute;width:220px;height:220px;border-radius:50%;background:rgba(253,220,6,.06);bottom:-60px;left:-60px;pointer-events:none}
 
@@ -45,18 +44,15 @@ html,body{height:100%;font-family:'Nunito',sans-serif;background:var(--pu);color
 
 .landing-sub{font-size:14px;font-weight:700;opacity:.75;margin-bottom:28px;line-height:1.6;animation:fadeUp .4s .14s ease both}
 
-/* HOW TO PLAY STEPS */
 .steps{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;text-align:left;animation:fadeUp .4s .2s ease both}
 .step-row{display:flex;align-items:flex-start;gap:12px;background:rgba(255,255,255,.07);border-radius:12px;padding:12px 14px}
 .step-num{background:var(--ye);color:var(--pu);font-weight:900;font-size:13px;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
 .step-text{font-size:13px;font-weight:700;line-height:1.55;opacity:.92}
 .step-text strong{color:var(--ye);font-weight:900}
 
-/* TIMER NOTE */
 .timer-note{background:rgba(253,220,6,.12);border:1.5px solid rgba(253,220,6,.35);border-radius:10px;padding:10px 14px;font-size:12px;font-weight:700;color:var(--ye);margin-bottom:28px;line-height:1.55;animation:fadeUp .4s .26s ease both}
 .timer-note strong{font-weight:900}
 
-/* BEGIN BUTTON */
 .begin-btn{
   display:inline-block;
   background:var(--ye);color:var(--pu);
@@ -170,12 +166,8 @@ html,body{height:100%;font-family:'Nunito',sans-serif;background:var(--pu);color
 <body>
 <div class="cw" id="cw"></div>
 
-<!-- ════════════════════════════
-     LANDING SCREEN
-════════════════════════════ -->
 <div id="s-landing" class="screen active">
   <div class="landing-inner">
-
     <div class="landing-title">SEO <em>Wordsearch</em> 🔍</div>
 
     <div class="steps">
@@ -194,15 +186,10 @@ html,body{height:100%;font-family:'Nunito',sans-serif;background:var(--pu);color
     </div>
 
     <button class="begin-btn" onclick="startGame()">Let's Go! →</button>
-
   </div>
 </div>
 
-<!-- ════════════════════════════
-     GAME SCREEN
-════════════════════════════ -->
 <div id="s-game" class="screen">
-
   <header class="hdr">
     <div class="hdr-logo">HX</div>
     <div class="hdr-mid">SEO <span>Wordsearch</span></div>
@@ -214,7 +201,6 @@ html,body{height:100%;font-family:'Nunito',sans-serif;background:var(--pu);color
 
   <div class="game-scroll">
 
-    <!-- HOW GOOGLE WORKS -->
     <div class="section-label">⚙️ How does Google actually work?</div>
     <div class="how-google">
       <div class="how-steps">
@@ -226,10 +212,9 @@ html,body{height:100%;font-family:'Nunito',sans-serif;background:var(--pu);color
       </div>
     </div>
 
-    <!-- DEFINITIONS -->
     <div class="section-label">📖 SEO Definitions </div>
     <div class="defs-grid">
-       <div class="def-card" data-word="OPTIMISATION" data-a="bl"><div class="dt">🎯 Optimisation <span class="tick">✓</span></div><div class="db">The ongoing process of improving pages so they rank higher — better content, fixing technical issues, earning links, and the best experience for users.</div></div>
+      <div class="def-card" data-word="OPTIMISATION" data-a="bl"><div class="dt">🎯 Optimisation <span class="tick">✓</span></div><div class="db">The ongoing process of improving pages so they rank higher — better content, fixing technical issues, earning links, and the best experience for users.</div></div>
       <div class="def-card" data-word="KEYWORDS" data-a="bl"><div class="dt">🔑 Keywords <span class="tick">✓</span></div><div class="db">The phrases customers type into search engines or AI platforms. We look at search volumes per month to write targeted content. <em>'Gatwick Parking'</em> = <strong>110,000/month!</strong></div></div>
       <div class="def-card" data-word="AUTHORITY" data-a="vi"><div class="dt">🏅 Authority <span class="tick">✓</span></div><div class="db">How much Google trusts your site — built through strong content, quality backlinks and a consistent brand presence.</div></div>
       <div class="def-card" data-word="RANKINGS" data-a="gr"><div class="dt">📊 Rankings <span class="tick">✓</span></div><div class="db">Our position on a <strong>SERP</strong> (Search Engine Results Page) — paid ads, organic listings (us!), AI Overviews and maps. We fight to rank at the top, for free!</div></div>
@@ -243,26 +228,32 @@ html,body{height:100%;font-family:'Nunito',sans-serif;background:var(--pu);color
 
     <hr class="divider">
 
-    <!-- TIMER + PROGRESS — above the grid -->
     <div class="timer-strip">
       <div class="timer-display" id="td">00:00</div>
-      <div style="display:flex;align-items:center;gap:10px">
+      <div style="display:flex;align-items:center;gap:10px"></div>
+    </div>
+
+    <div class="progress-row">
+      <div class="fc" id="fc">0 / 10 found</div>
+      <div class="pbar-wrap">
+        <div class="pbar-fill" id="pb"></div>
       </div>
     </div>
 
-    <!-- WORDSEARCH -->
     <div class="section-label" style="margin-bottom:6px">Find the words at the bottom of the screen. The timer starts on your first find. Hint: some may be backwards!</div>
     <div class="ws-grid-wrap" id="gwrap">
-      <div class="ws-grid" id="wsg" style="grid-template-columns: repeat(13, 1fr);"><div class="wc" data-r="0" data-c="0">S</div><div class="wc" data-r="0" data-c="1">C</div><div class="wc" data-r="0" data-c="2">X</div><div class="wc" data-r="0" data-c="3">G</div><div class="wc" data-r="0" data-c="4">T</div><div class="wc" data-r="0" data-c="5">O</div><div class="wc" data-r="0" data-c="6">V</div><div class="wc" data-r="0" data-c="7">V</div><div class="wc" data-r="0" data-c="8">M</div><div class="wc" data-r="0" data-c="9">A</div><div class="wc" data-r="0" data-c="10">C</div><div class="wc" data-r="0" data-c="11">P</div><div class="wc" data-r="0" data-c="12">D</div><div class="wc" data-r="1" data-c="0">D</div><div class="wc" data-r="1" data-c="1">B</div><div class="wc" data-r="1" data-c="2">D</div><div class="wc" data-r="1" data-c="3">W</div><div class="wc" data-r="1" data-c="4">U</div><div class="wc" data-r="1" data-c="5">C</div><div class="wc" data-r="1" data-c="6">N</div><div class="wc" data-r="1" data-c="7">D</div><div class="wc" data-r="1" data-c="8">Z</div><div class="wc" data-r="1" data-c="9">M</div><div class="wc" data-r="1" data-c="10">T</div><div class="wc" data-r="1" data-c="11">F</div><div class="wc" data-r="1" data-c="12">G</div><div class="wc" data-r="2" data-c="0">R</div><div class="wc" data-r="2" data-c="1">K</div><div class="wc" data-r="2" data-c="2">G</div><div class="wc" data-r="2" data-c="3">P</div><div class="wc" data-r="2" data-c="4">N</div><div class="wc" data-r="2" data-c="5">B</div><div class="wc" data-r="2" data-c="6">F</div><div class="wc" data-r="2" data-c="7">O</div><div class="wc" data-r="2" data-c="8">K</div><div class="wc" data-r="2" data-c="9">D</div><div class="wc" data-r="2" data-c="10">S</div><div class="wc" data-r="2" data-c="11">G</div><div class="wc" data-r="2" data-c="12">Q</div><div class="wc" data-r="3" data-c="0">O</div><div class="wc" data-r="3" data-c="1">O</div><div class="wc" data-r="3" data-c="2">P</div><div class="wc" data-r="3" data-c="3">T</div><div class="wc" data-r="3" data-c="4">I</div><div class="wc" data-r="3" data-c="5">M</div><div class="wc" data-r="3" data-c="6">I</div><div class="wc" data-r="3" data-c="7">S</div><div class="wc" data-r="3" data-c="8">A</div><div class="wc" data-r="3" data-c="9">T</div><div class="wc" data-r="3" data-c="10">I</div><div class="wc" data-r="3" data-c="11">O</div><div class="wc" data-r="3" data-c="12">N</div><div class="wc" data-r="4" data-c="0">W</div><div class="wc" data-r="4" data-c="1">I</div><div class="wc" data-r="4" data-c="2">I</div><div class="wc" data-r="4" data-c="3">F</div><div class="wc" data-r="4" data-c="4">Y</div><div class="wc" data-r="4" data-c="5">T</div><div class="wc" data-r="4" data-c="6">I</div><div class="wc" data-r="4" data-c="7">R</div><div class="wc" data-r="4" data-c="8">O</div><div class="wc" data-r="4" data-c="9">H</div><div class="wc" data-r="4" data-c="10">T</div><div class="wc" data-r="4" data-c="11">U</div><div class="wc" data-r="4" data-c="12">A</div><div class="wc" data-r="5" data-c="0">Y</div><div class="wc" data-r="5" data-c="1">R</div><div class="wc" data-r="5" data-c="2">Y</div><div class="wc" data-r="5" data-c="3">L</div><div class="wc" data-r="5" data-c="4">O</div><div class="wc" data-r="5" data-c="5">K</div><div class="wc" data-r="5" data-c="6">A</div><div class="wc" data-r="5" data-c="7">L</div><div class="wc" data-r="5" data-c="8">Z</div><div class="wc" data-r="5" data-c="9">C</div><div class="wc" data-r="5" data-c="10">T</div><div class="wc" data-r="5" data-c="11">S</div><div class="wc" data-r="5" data-c="12">O</div><div class="wc" data-r="6" data-c="0">E</div><div class="wc" data-r="6" data-c="1">E</div><div class="wc" data-r="6" data-c="2">N</div><div class="wc" data-r="6" data-c="3">P</div><div class="wc" data-r="6" data-c="4">W</div><div class="wc" data-r="6" data-c="5">S</div><div class="wc" data-r="6" data-c="6">N</div><div class="wc" data-r="6" data-c="7">T</div><div class="wc" data-r="6" data-c="8">T</div><div class="wc" data-r="6" data-c="9">S</div><div class="wc" data-r="6" data-c="10">Z</div><div class="wc" data-r="6" data-c="11">G</div><div class="wc" data-r="6" data-c="12">S</div><div class="wc" data-r="7" data-c="0">K</div><div class="wc" data-r="7" data-c="1">V</div><div class="wc" data-r="7" data-c="2">N</div><div class="wc" data-r="7" data-c="3">O</div><div class="wc" data-r="7" data-c="4">I</div><div class="wc" data-r="7" data-c="5">C</div><div class="wc" data-r="7" data-c="6">R</div><div class="wc" data-r="7" data-c="7">U</div><div class="wc" data-r="7" data-c="8">R</div><div class="wc" data-r="7" data-c="9">D</div><div class="wc" data-r="7" data-c="10">M</div><div class="wc" data-r="7" data-c="11">N</div><div class="wc" data-r="7" data-c="12">E</div><div class="wc" data-r="8" data-c="0">F</div><div class="wc" data-r="8" data-c="1">I</div><div class="wc" data-r="8" data-c="2">O</div><div class="wc" data-r="8" data-c="3">D</div><div class="wc" data-r="8" data-c="4">J</div><div class="wc" data-r="8" data-c="5">H</div><div class="wc" data-r="8" data-c="6">S</div><div class="wc" data-r="8" data-c="7">P</div><div class="wc" data-r="8" data-c="8">I</div><div class="wc" data-r="8" data-c="9">R</div><div class="wc" data-r="8" data-c="10">T</div><div class="wc" data-r="8" data-c="11">I</div><div class="wc" data-r="8" data-c="12">G</div><div class="wc" data-r="9" data-c="0">A</div><div class="wc" data-r="9" data-c="1">E</div><div class="wc" data-r="9" data-c="2">P</div><div class="wc" data-r="9" data-c="3">A</div><div class="wc" data-r="9" data-c="4">G</div><div class="wc" data-r="9" data-c="5">E</div><div class="wc" data-r="9" data-c="6">S</div><div class="wc" data-r="9" data-c="7">P</div><div class="wc" data-r="9" data-c="8">E</div><div class="wc" data-r="9" data-c="9">E</div><div class="wc" data-r="9" data-c="10">D</div><div class="wc" data-r="9" data-c="11">K</div><div class="wc" data-r="9" data-c="12">A</div><div class="wc" data-r="10" data-c="0">Q</div><div class="wc" data-r="10" data-c="1">W</div><div class="wc" data-r="10" data-c="2">B</div><div class="wc" data-r="10" data-c="3">X</div><div class="wc" data-r="10" data-c="4">E</div><div class="wc" data-r="10" data-c="5">M</div><div class="wc" data-r="10" data-c="6">B</div><div class="wc" data-r="10" data-c="7">Z</div><div class="wc" data-r="10" data-c="8">W</div><div class="wc" data-r="10" data-c="9">V</div><div class="wc" data-r="10" data-c="10">A</div><div class="wc" data-r="10" data-c="11">N</div><div class="wc" data-r="10" data-c="12">M</div><div class="wc" data-r="11" data-c="0">S</div><div class="wc" data-r="11" data-c="1">S</div><div class="wc" data-r="11" data-c="2">Y</div><div class="wc" data-r="11" data-c="3">S</div><div class="wc" data-r="11" data-c="4">E</div><div class="wc" data-r="11" data-c="5">A</div><div class="wc" data-r="11" data-c="6">X</div><div class="wc" data-r="11" data-c="7">Y</div><div class="wc" data-r="11" data-c="8">V</div><div class="wc" data-r="11" data-c="9">W</div><div class="wc" data-r="11" data-c="10">P</div><div class="wc" data-r="11" data-c="11">A</div><div class="wc" data-r="11" data-c="12">I</div><div class="wc" data-r="12" data-c="0">V</div><div class="wc" data-r="12" data-c="1">S</div><div class="wc" data-r="12" data-c="2">B</div><div class="wc" data-r="12" data-c="3">A</div><div class="wc" data-r="12" data-c="4">C</div><div class="wc" data-r="12" data-c="5">K</div><div class="wc" data-r="12" data-c="6">L</div><div class="wc" data-r="12" data-c="7">I</div><div class="wc" data-r="12" data-c="8">N</div><div class="wc" data-r="12" data-c="9">K</div><div class="wc" data-r="12" data-c="10">S</div><div class="wc" data-r="12" data-c="11">R</div><div class="wc" data-r="12" data-c="12">T</div></div>
+      <div class="ws-grid" id="wsg"></div>
     </div>
-    <div class="chips-wrap" id="chips"><div class="chip" data-word="KEYWORDS">KEYWORDS</div><div class="chip" data-word="RANKINGS">RANKINGS</div><div class="chip" data-word="REVIEWS">REVIEWS</div><div class="chip" data-word="BACKLINKS">BACKLINKS</div><div class="chip" data-word="FAQS">FAQS</div><div class="chip" data-word="IMAGES">IMAGES</div><div class="chip" data-word="SCHEMA">SCHEMA</div><div class="chip" data-word="PAGESPEED">PAGESPEED</div><div class="chip" data-word="OPTIMISATION">OPTIMISATION</div><div class="chip" data-word="AUTHORITY">AUTHORITY</div></div>
+
+    <div class="chips-wrap" id="chips"></div>
+
     <div class="win-banner" id="wb">
       <h3>🏆 All found!</h3>
       <div class="win-time" id="wt">--:--</div>
     </div>
 
-  </div><!-- end game-scroll -->
-</div><!-- end s-game -->
+  </div>
+</div>
 
 <script>
 const WORDS=[
@@ -289,13 +280,9 @@ function makeGrid(){
   grid=Array.from({length:SZ},()=>Array(SZ).fill(''));
   placed=[];
 
-  // Assign directions explicitly: first 4 words horizontal, rest vertical
-  // dirs: [0,1]=right, [0,-1]=left, [1,0]=down, [-1,0]=up
   const horizontal=[[0,1],[0,-1]];
   const vertical=[[1,0],[-1,0]];
   const sorted=[...WORDS].sort((a,b)=>b.word.length-a.word.length);
-
-  // Force first 4 to be horizontal, rest vertical
   const assignments=sorted.map((w,i)=> i<4 ? horizontal : vertical);
 
   for(let wi=0;wi<sorted.length;wi++){
@@ -352,7 +339,6 @@ function extSel(r,c){
   const dr=r-sr,dc=c-sc;
   const adr=Math.abs(dr),adc=Math.abs(dc);
   let sR=0,sC=0;
-  // snap to pure horizontal or pure vertical (whichever axis is longer)
   if(adr>=adc){sR=dr?dr/adr:0;sC=0}
   else{sR=0;sC=dc?dc/adc:0}
   const len=sR===0?adc:adr;
@@ -371,7 +357,7 @@ function endSel(){
   for(const p of placed){if(found.has(p.word))continue;if(str===p.word||rev===p.word){hit=p;break}}
   if(hit){
     found.add(hit.word);
-    if(found.size===1)startT(); // auto-start on first word
+    if(found.size===1)startT();
     hit.cells.forEach(([r,c])=>{const el=gc(r,c);if(el){el.classList.add('hit');el.style.background=hit.color}});
     document.querySelector(`.chip[data-word="${hit.word}"]`)?.classList.add('found');
     document.querySelector(`.def-card[data-word="${hit.word}"]`)?.classList.add('found');
@@ -402,7 +388,6 @@ function renderChips(){
   });
 }
 
-// NAVIGATION
 function startGame(){
   document.getElementById('s-landing').classList.remove('active');
   const g=document.getElementById('s-game');
@@ -410,7 +395,6 @@ function startGame(){
   g.querySelector('.game-scroll').scrollTop=0;
 }
 
-// TIMER
 let tiv=null,tsec=0,trun=false;
 function pad(n){return String(n).padStart(2,'0')}
 function fmt(s){return pad(Math.floor(s/60))+':'+pad(s%60)}
@@ -456,6 +440,5 @@ function boom(count){
 
 makeGrid();renderGrid();renderChips();
 </script>
-
-
-</body></html>
+</body>
+</html>
